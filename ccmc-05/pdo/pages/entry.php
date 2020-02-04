@@ -31,8 +31,8 @@ exit(0);
 		<form action="restaurants.php" method="get">
 		<select name="area">
 			<option value="0">-- 選択してください --</option>
-			<?php foreachforeach ($areas as $area) { ?>
-			<option value="<?= $area->get() ?></option>
+			<?php foreach ($areas as $area) { ?>
+			<option value="<?= $area->getId() ?>"><?= $area->getName()?></option>
 			<?php } ?>
 		</select>
 		<input type="submit" value="選択" />
